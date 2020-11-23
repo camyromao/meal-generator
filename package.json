@@ -1,0 +1,23 @@
+{
+  "name": "meal-generator",
+  "version": "1.0.0",
+  "description": "Random Meal Generator",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camyromao/meal-generator.git"
+  },
+  "author": "Camyla Romão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camyromao/meal-generator/issues"
+  },
+  "homepage": "https://github.com/camyromao/meal-generator#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.460"
+  }
+}
