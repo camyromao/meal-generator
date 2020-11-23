@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/camyromao/meal-generator#readme",
   "devDependencies": {
-    "parcel": "^2.0.0-nightly.460"
+    "parcel": "^2.0.0-nightly.460",
+    "sass": "^1.29.0"
   }
 }
