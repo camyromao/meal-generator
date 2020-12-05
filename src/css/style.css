@@ -2,7 +2,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #fcd0d0;
   margin: 0;
-  -webkit-font-smoo;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -11,10 +11,12 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin: 40px auto;
 }
 
 .container--no-recipe {
   height: 100vh;
+  margin-top: 0;
 }
 
 .header {
@@ -68,7 +70,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   width: 70%;
   margin-top: 50px;
 }
@@ -82,6 +84,7 @@ body {
 
 .recipe-title {
   font-size: 48px;
+  font-weight: 700;
 }
 
 .recipe-img {
