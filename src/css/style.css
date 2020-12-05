@@ -9,9 +9,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.container--no-meal {
+  height: 100vh;
 }
 
 .header {
@@ -23,7 +26,7 @@ body {
 }
 
 
-.main {
+.landing {
   display: flex;
   flex-direction: column;
   gap: 20px;  
@@ -58,4 +61,30 @@ body {
 
 .btn:focus {
   outline: 0;
+}
+
+#meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.recipe-img {
+  width: 400px;
+  height: 400px;
+}
+
+.recipe-directions, .recipe-ingredients {
+  font-size: 18px;
 }
