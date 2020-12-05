@@ -59,7 +59,8 @@ function buildIngredientsHTML(ingredients) {
   let ingredientsList = "";
 
   ingredients.forEach(ingredient => {
-    ingredientsList = ingredientsList + `<li>${ingredient['name']} (${ingredient['measure']})</li>`
+    const measure = ingredient['measure'] ? `(${ingredient['measure']})` : ""
+    ingredientsList = ingredientsList + `<li>${ingredient['name']} ${measure}</li>`
   });
 
   return `<ul>${ingredientsList}</ul>`;
