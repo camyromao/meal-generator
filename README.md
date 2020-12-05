@@ -5,6 +5,12 @@ You can access it [here](https://camyromao.github.io/meal-generator/).
 Simple Meal Generator that works by getting a recipe randomly from external API.
 
 
+## Future Work
+- Add package manager and bundler
+- Display recipe source
+- Display recipe video
+
+
 ## Resources
 - [Random Meal Generator from App-Ideas](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Random-Meal-Generator.md)
 - [The MealDB API](https://www.themealdb.com/)
