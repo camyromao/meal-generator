@@ -20,7 +20,7 @@ function formatMeal(data) {
   let count = 1;
   while (data[`strIngredient${count}`])  {
     const ingredient = {
-      'ingredient': data[`strIngredient${count}`],
+      'name': data[`strIngredient${count}`],
       'measure': data[`strMeasure${count}`]
     };
     console.log(ingredient);
@@ -32,7 +32,7 @@ function formatMeal(data) {
     }
   }
 
-  console.log(ingredients);
+  const ingredientsList = buildIngredientsHTML(ingredients);
 
   container.innerHTML = `
     <div class="recipe-title text">
@@ -42,10 +42,21 @@ function formatMeal(data) {
       <img src=${data.strMealThumb} class="recipe-img">
       <div class="recipe-ingredients">
         Ingredients
+        ${ingredientsList}
       </div>
     </div>
     <div class="recipe-directions">
       ${data.strInstructions}
     </div>
   `;
+}
+
+function buildIngredientsHTML(ingredients) {
+  let ingredientsList = "";
+
+  ingredients.forEach(ingredient => {
+    ingredientsList = ingredientsList + `<li>${ingredient['name']} (${ingredient['measure']})</li>`
+  });
+
+  return `<ul>${ingredientsList}</ul>`;
 }
