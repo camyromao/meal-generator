@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.container--no-meal {
+.container--no-recipe {
   height: 100vh;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .text {
   font-weight: normal;
-  font-size: 48px;
+  font-size: 36px;
 }
 
 .btn {
@@ -63,7 +63,7 @@ body {
   outline: 0;
 }
 
-#meal {
+#recipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,6 +78,10 @@ body {
   grid-template-columns: 45% 45%;
   justify-content: space-between;
   width: 100%;
+}
+
+.recipe-title {
+  font-size: 48px;
 }
 
 .recipe-img {

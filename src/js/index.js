@@ -1,5 +1,5 @@
-const getMealButton = document.getElementById('get-meal');
-const container = document.getElementById('meal');
+const getMealButton = document.getElementById('get-recipe');
+const recipeContainer = document.getElementById('recipe');
 const mainContainer = document.querySelector('.container');
 
 getMealButton.addEventListener("click", () => {
@@ -8,13 +8,10 @@ getMealButton.addEventListener("click", () => {
   .then(res => formatMeal(res.meals[0]));
   console.log('button clicked!');
 
-  mainContainer.classList.remove('container--no-meal');
-  
+  mainContainer.classList.remove('container--no-recipe');
 });
 
 function formatMeal(data) {
-  console.log(data);
-  console.log(data.strMeal);
   const ingredients = [];
 
   let count = 1;
@@ -23,7 +20,6 @@ function formatMeal(data) {
       'name': data[`strIngredient${count}`],
       'measure': data[`strMeasure${count}`]
     };
-    console.log(ingredient);
     if (ingredient) {
       ingredients.push(ingredient);
       count++;
@@ -34,8 +30,8 @@ function formatMeal(data) {
 
   const ingredientsList = buildIngredientsHTML(ingredients);
 
-  container.innerHTML = `
-    <div class="recipe-title text">
+  recipeContainer.innerHTML = `
+    <div class="recipe-title">
       ${data.strMeal}
     </div>
     <div class="recipe-container">
