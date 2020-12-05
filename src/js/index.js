@@ -2,6 +2,14 @@ const getMealButton = document.getElementById('get-recipe');
 const recipeContainer = document.getElementById('recipe');
 const mainContainer = document.querySelector('.container');
 
+const observer = new MutationObserver(() => {
+  console.log('mutation observer callback');
+  const offset = recipeContainer.offsetTop;
+  window.scrollTo(0, offset);
+});
+
+observer.observe(recipeContainer, {subtree: true, childList: true});
+
 getMealButton.addEventListener("click", () => {
   fetch('https://www.themealdb.com/api/json/v1/1/random.php')
   .then(res => res.json())
