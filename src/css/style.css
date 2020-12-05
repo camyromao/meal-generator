@@ -72,7 +72,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
   width: 70%;
   margin-top: 50px;
 }
@@ -81,6 +80,7 @@ body {
   display: grid;
   grid-template-columns: 45% 10% 45%;
   width: 100%;
+  margin: 40px auto;
 }
 
 .recipe-title {
@@ -124,11 +124,14 @@ body {
   .recipe-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
 
   .recipe-directions {
     line-height: 1.44;
+  }
+
+  .recipe-img {
+    margin-bottom: 40px;
   }
 
 }
