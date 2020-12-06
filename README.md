@@ -6,7 +6,6 @@ Simple Meal Generator that works by getting a recipe randomly from external API.
 
 
 ## Future Work
-- Add package manager and bundler
 - Display recipe source
 - Display recipe video
 
