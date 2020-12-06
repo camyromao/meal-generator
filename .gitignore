@@ -4,5 +4,5 @@ node_modules/
 # Ignore dist
 dist/
 
-# Ignore parcel cache
-.parcel-cache/
+# Ignore cache
+.cache/
