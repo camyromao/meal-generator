@@ -12,6 +12,7 @@
 
   <body>
       <div class="container container--no-recipe">
+        <div id="google_translate_element"></div>
         <div class="landing">
           <img src="src/img/logo.png" alt="food" class="logo">
           <div class="text">
@@ -22,6 +23,12 @@
         <div id="recipe">
         </div>
       </div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       <script src="src/js/index.js"></script>
   </body>
 

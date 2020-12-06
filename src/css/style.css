@@ -5,6 +5,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.skiptranslate iframe {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
